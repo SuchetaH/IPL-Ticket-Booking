@@ -1,0 +1,290 @@
+```css
+/* =========================
+   IPL TICKET BOOKING CSS
+   ========================= */
+
+/* CSS Variables */
+:root {
+    --primary: #071952;
+    --accent: #f5b700;
+    --background: #f4f6f8;
+    --text: #222222;
+    --white: #ffffff;
+}
+
+
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary);
+    padding: 18px;
+    text-align: center;
+
+    /* Fixed navigation */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/* Navigation Links */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+
+/* Hover Effect */
+nav a:hover {
+    color: var(--accent);
+}
+
+
+/* Banner / Hero Section */
+.banner {
+    background: linear-gradient(
+        135deg,
+        #071952,
+        #4b0082
+    );
+
+    color: var(--white);
+    text-align: center;
+    padding: 120px 20px 70px;
+}
+
+
+/* Banner Heading */
+.banner h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+/* Banner Tagline */
+.banner h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+button {
+    background-color: var(--accent);
+    color: #111111;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+button:hover {
+    background-color: #ffffff;
+    color: var(--primary);
+}
+
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+/* Sections */
+section {
+    background-color: var(--white);
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 10px;
+
+    /* Shadow */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section Headings */
+h2 {
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+}
+
+
+/* Lists */
+li {
+    margin: 8px;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--white);
+}
+
+
+/* Table Heading and Data */
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* Table Heading */
+th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/* Table Row Hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Form */
+form {
+    width: 100%;
+}
+
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+
+/* Input and Select */
+input,
+select {
+    width: 95%;
+    padding: 11px;
+    margin: 8px 0 18px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* Booking Area */
+.booking {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Booking Form */
+.form {
+    width: 50%;
+}
+
+
+/* Booking Summary */
+.summary {
+    width: 50%;
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Summary Heading */
+.summary h3 {
+    color: var(--primary);
+}
+
+
+/* Guidelines Cards */
+.card {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 27%;
+
+    padding: 20px;
+    margin: 10px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Card Heading */
+.card h3 {
+    color: var(--primary);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .booking {
+        display: block;
+    }
+
+    .form,
+    .summary {
+        width: 100%;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+```
